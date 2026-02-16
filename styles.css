@@ -1,0 +1,850 @@
+
+:link{
+    text-decoration: dashed;
+    color: #05c4a4;
+
+}
+
+
+
+/* body {
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    nav-right: auto;
+    font-family: Arial, sans-serif;
+   background-color: rgba(122, 98, 98, 0.596);
+   animation: fadeIn 1.5s ease forwards;
+} */
+/* Conteneur centré avec fond coloré */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.6);
+  padding:15px;
+  z-index:1000;
+}
+
+.navbar ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  gap:40px;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.navbar a:hover{
+  color:#48c9b0;
+}
+
+
+/* Centrer le contenu de la page */
+/* main {
+    text-align: left;
+    margin-top: 120px;
+    padding: 0 20px;
+} */
+/* Titre principal (h1) */
+/* h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    color: #111;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase; met en majuscules 
+    text-align: center;
+    
+} */
+/* Sous-titre ou texte de présentation (h2) */
+h2 {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: #555;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 700px; /* limite la largeur pour une meilleure lecture */
+    /* margin: 0 auto; centre horizontalement */
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #ffffff;
+    line-height: 1.6;
+    /* max-width: 700px; */
+}
+/* Optionnel : animation d’apparition douce */
+h1, h2, p {
+    opacity: 0; 
+    animation: fadeIn 1.5s ease forwards;
+    margin: 0;
+    padding: 0;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+ 
+
+/* body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: #333;
+  margin: 40px;
+  line-height: 1.6;
+} */
+
+/* details {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+} */
+summary {
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: #004080;
+}
+/* details[open] {
+  background: #eaf4ff;
+  border-color: #80bfff;
+ border-image-width: 200px;
+} */
+summary a:hover {
+   background-color: rgb(0, 221, 214);
+}
+summary, p{
+margin:20px;
+}
+summary {
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: #004080;
+  padding: 10px;          /* Ajoute un peu d’espace autour du texte */
+  display: block;         /* Force le summary à prendre toute la largeur */
+}
+
+
+/* .image-gallery {
+  padding: 10px 0;
+}
+
+.image-box {
+  width: 250px;
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+} */
+
+.section-presentation {
+  display: flex;
+  flex-direction: column;         /* ✅ logo en haut, texte en bas */
+  align-items: flex-start;        /* ✅ aligné à gauche */
+  padding: 120px 50px 100px 80px; /* top, right, bottom, left */
+  background-color: #f1f1f1;      /* ✅ fond gris clair */
+  min-height: 100vh;              /* prend toute la hauteur de la page */
+  box-sizing: border-box;
+}
+
+.logo-container {
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.texte-presentation {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  max-width: 800px;
+}
+
+/* .texte-presentation h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.texte-presentation p {
+  font-size: 20px;
+  line-height: 1.6;
+} */
+
+/* body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+} */
+/* h1 {
+  text-align: center;
+  margin-top: 40px;
+  color: #1a237e;} */
+
+/* body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+} */
+.parcours-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+.parcours-container h1 {
+  text-align: center;
+  color: #0d47a1;
+  font-size: 2em;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+.parcours-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(111, 255, 255, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.parcours-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.parcours-card h2 {
+  color: #1a237e;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+.parcours-card p {
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+.year {
+  display: inline-block;
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: white;
+  padding: 10px;
+  position: relative;
+  margin: 60px;
+}
+
+.image-texte {
+  display: flex;
+  align-items: center; /* aligne verticalement au centre */
+  gap: 20px; /* espace entre image et texte */
+}
+
+.image-texte img {
+  width: 150px; /* ajuste selon tes besoins */
+  height: auto;
+}
+
+/* body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+background: #f4f7fb;
+color: #222;
+} */
+
+/* .menu {
+display: flex;
+justify-content: center;
+gap: 20px;
+background: linear-gradient(90deg, #ffffff, #000000);
+padding: 15px;
+border-radius: 0 0 30px 30px;
+}
+
+.menu a {
+color: rgb(0, 0, 0);
+text-decoration: none;
+font-weight: 600;
+transition: 0.3s;
+}
+
+.menu a:hover, .menu .active {
+text-shadow: 0 0 8px rgb(0, 0, 0);
+transform: scale(1.05);
+} */
+
+/* Bloc signature stylé */
+/* .signature { */
+/* position: fixed;
+bottom: 20px; */
+/* right: 20px; */
+
+/* display: flex;
+align-items: center;
+gap: 15px;
+background: white;
+border-radius: 20px;
+padding: 15px 25px;
+margin: 50px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+animation: slideUp 1s ease-out;
+} */
+
+/* .signature:hover {
+transform: scale(1.05);
+transition: 0.3s;
+box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.logo {
+width: 150px;
+height: 200px;
+object-fit: contain;
+animation: float 3s ease-in-out infinite;
+} */
+
+.infos {
+line-height: 1.4;
+}
+
+/* .name {
+font-size: 1.2em;
+font-weight: 700;
+color: #007bff;
+margin: 0;
+} */
+
+/* Animations */
+@keyframes slideUp {
+from { transform: translateY(50px); opacity: 0; }
+to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes float {
+0%, 100% { transform: translateY(0px); }
+50% { transform: translateY(-8px); }
+}
+.glow {
+box-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+}
+
+.gallery {
+max-width: 1000px;
+margin: 60px auto;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+}
+
+.gallery h2 {
+font-size: 2em;
+color: #007bff;
+margin-bottom: 30px;
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+/* 🖼️ Disposition en grille fluide */
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+}
+
+/* 📦 Carte image + légende */
+.gallery-item {
+position: relative;
+background: white;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* 🖼️ Images adaptatives */
+.gallery-item img {
+width: 100%;
+height: 250px;
+object-fit: cover; /* ajuste sans déformer */
+display: block;
+padding-left: 0%;
+}
+
+/* 📝 Légende */
+.caption {
+padding: 10px 15px;
+font-size: 0.95em;
+color: #333;
+background: #f4f7fb;
+}
+
+/* ✨ Animation d’apparition */
+@keyframes fadeInUp {
+from { opacity: 0; transform: translateY(30px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.gallery-item {
+animation: fadeInUp 0.8s ease forwards;
+}
+/* img{
+  border-radius: 100px;
+  margin: auto;
+  padding: 30px;
+} */
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+} */
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #e0f7fa;
+    border-radius: 10px;
+    padding: 30px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    color: #05c5ff;
+    margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.content img {
+    width: 300px;
+    /* border-radius: 10px; */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+.text p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    
+}
+.image-flottante {
+       float: left;
+    width: 350px;
+    height: auto;
+    margin: 0 20px 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+}
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+strong {
+    color: #00bcd4;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #333;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/autre\ fond.jpg");
+    background-size: 100% auto ;
+    /* background-position: center; */
+}
+
+/* NAVIGATION */
+/* header nav {
+    background-color: #2bb3a3;
+    padding: 15px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+} */
+
+/* TITRE PRINCIPAL */
+header h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 32px;
+    color: #2c3e50;
+   
+}
+
+/* PROFIL */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 60px;
+    background-color:none;
+    border-radius: 0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* .profile-image img {
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+} */
+
+.profile-info {
+    max-width: 500px;
+    text-align: center;
+}
+
+.profile-info h2 {
+    font-size: 40px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.profile-info p {
+    font-size: 25px;
+
+    line-height: 1.6;
+    margin-bottom: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.profile-info a {
+    color: #2bb3a3;
+    text-decoration: none;
+}
+
+.profile-info a:hover {
+    text-decoration: underline;
+}
+
+/* Style du header */
+/* header {
+    width: 100%;
+    background-color: #2bb3a3;
+    padding: 10px 20px;
+    box-sizing: border-box;
+} */
+
+/* Conteneur du logo */
+.logo img {
+    height: 50px;
+}
+
+Menu en ligne avec logo */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+} */
+
+#titre {
+color :rgb(0, 0, 0);
+}
+#paragraphe { color :black
+}
+#titre2 {
+  color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;   /* met en gras */
+  font-size: 50px;     /* augmente la taille */
+}
+#nom {
+  color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;   /* met en gras */
+  font-size: 35px;     /* augmente la taille */
+}
+#background{
+  background-image: none;
+  background-color: white;
+  color: #111;
+}
+#titre3{
+  color: #29c5c5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#titre4{
+ color: #fbff00;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: x-large;
+}
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* espace entre images et texte */
+  margin-top: 50px;
+  padding: 20px;
+  /* margin-bottom: 20px; */
+  flex-wrap: wrap; /* pour responsive */
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 30px;
+  background: linear-gradient(145deg, #e0f7fa, #acebf3);
+  /* border-radius: 20px; */
+  /* background-color: #e0f7fa; */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.2s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.carousel-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #e0f7fa;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 60vh;
+
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.slides .slide {
+  display: none;
+  animation: fade 0.5s ease-in-out;
+}
+
+#slide1:checked ~ .slides #s1,
+#slide2:checked ~ .slides #s2,
+#slide3:checked ~ .slides #s3 {
+  display: block;
+}
+
+.slide h2 {
+  color: #00695c;
+  margin-bottom: 15px;
+  font-size: 2em;
+
+}
+
+.slide p {
+  color: #333;
+  font-size: 1.3em;
+  line-height: 1.6;
+}
+
+/* Navigation styling */
+.navigation {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  font-size: 2em;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #009688;
+  transition: transform 0.2s;
+}
+
+.nav-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Animation */
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.origine{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 40px; espace entre images et texte */
+   /* margin-top: 50px; */
+   padding: 20px; 
+  /* margin-bottom: 20px; */
+  flex-wrap: wrap; /* pour responsive */
+  text-align: center;
+  /* padding: 40px 20px;
+  margin-top: 30px; */
+  /* background: linear-gradient(145deg, #e0f7fa, #acebf3); */
+  /* border-radius: 20px; */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.2s ease-in-out;
+}
+.traduction {
+  width: fit-content;
+  margin: 0px auto; 
+  background-color: #ffffff75; /* bleu clair élégant */
+  border-radius: 25px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 10px rgba(76, 136, 156, 0.1);
+  color: #29c5c5;
+  margin: 50px;
+}
+.traduction ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* gap: 20px; */}
+.traduction a {
+  text-decoration: none;
+  color: #004d40;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+/* Survol */
+.traduction a:hover {
+  /* background-color: #b1aeae; */
+   border-radius: 25px;
+  padding: 10px 15px;
+   width: fit-content;
+  margin: 0px auto; 
+  box-shadow: 0 4px 10px rgba(76, 136, 156, 0.1);
+}
+
+/* Lien actif */
+.traduction a.active {
+  /* background-color: #4db6ac; */
+  color: white;
+}
+h3{
+    color: #29c5c5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.video-container {
+  text-align: center; /* centre le contenu en ligne comme <video> */
+}
+
+.video-container video {
+  max-width: 70%; /* ou une largeur fixe */
+  height: auto;
+  display: inline-block;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin: 70px 0 40px;
+    text-transform: uppercase;
+    color: #64c8ff;
+    position: relative;
+    text-shadow: 0 0 10px rgba(100, 200, 255, 0.6);
+}
+
+/* ligne lumineuse en dessous */
+.main-title::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    margin: 15px auto 0;
+    border-radius: 3px;
+    background: linear-gradient(90deg, transparent, #64c8ff, transparent);
+}

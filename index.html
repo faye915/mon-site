@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Acccueil - Cheikh Ibrahima FAYE</title>
+     <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="image/favicon.webp">
+</head>
+<body>
+    <br>
+    <br>
+    <div class="navbar">
+  <nav>
+    <ul>
+      <li><a href="#qui-suis-je">Qui suis-je</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#album">Album</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<style>
+/* Reset de base */
+
+
+/* Section profile */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 250px;    /* ← CHANGEZ CETTE VALEUR */
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 5px solid #48c9b0;
+    box-shadow: 0 10px 30px rgba(72, 201, 176, 0.4);
+    transition: transform 0.3s ease;
+}
+.profile-image img:hover {
+    transform: scale(1.05);
+}
+
+.profile-info {
+    flex: 1;
+    text-align: left;
+}
+
+/* Section contact */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.contact-container {
+    text-align: center;
+    max-width: 800px;
+}
+
+.contact-title {
+    color: #48c9b0;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-link:hover {
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.contact-link svg {
+    width: 45px;
+    height: 45px;
+}
+
+/* Message de contact */
+/* h2#titre {
+    color: #48c9b0;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+} */
+
+/* Responsive */
+@media (max-width: 768px) {
+    #titre1 {
+        font-size: 1.8rem;
+    }
+    
+    .navbar nav ul {
+        gap: 1rem;
+    }
+    
+    .contact-icons {
+        gap: 1.5rem;
+    }
+    
+    .contact-link {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .contact-link svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-info {
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+}
+</style>
+<br>
+<h1 id="qui-suis-je" class="main-title"><b>QUI SUIS-JE ?</b></h1>
+<section class="profile">
+        <div class="profile-image">
+            <!-- Remplacez "image/ma-photo.jpg" par le chemin de votre photo -->
+            <img src="IMG_4707.jpg" alt="Photo de Cheikh Ibrahima FAYE">
+        </div>
+        <div class="profile-info">
+            <h2 id="nom">Cheikh Ibrahima FAYE</h2>
+            <P id="titre1">Étudiant BUT1 Réseaux & Télécoms <br> Université Marie et Louis Pasteur <br> MONTBELIARD</P>
+            <!-- <p id="titre2">IUT Nord Franche-Comté</p> -->
+            <!-- <h3 id="titre2"><a href="mailto:cheikh_ibrahima.faye@edu.univ-fcomte.fr"><b>cheikh_ibrahima.faye@edu.univ-fcomte.fr</a></b></h3> -->
+        </div>
+    </section>
+    
+    <!-- <div class="image"> -->
+<!-- <img src="image/IUT-NFC-solo-logo-rond.png" height="100" width="100"  alt="ufc"> --> 
+<!-- <img src="image/logo2.png" height="100" width="110" alt="rt"> -->
+<!-- <h2 id="titre">vous pouvez me contacter via ces differents plateformes</h2>  -->
+
+</div>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certifications & CV | Cheikh Ibrahima FAYE</title>
+<link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="image/favicon.webp">
+
+
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: url("autre fond.jpg") center/cover no-repeat fixed;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* OVERLAY (meilleure lisibilité) */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 20, 40, 0.55);
+    z-index: -1;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.header p {
+    margin-top: 10px;
+    color: #cfeeff;
+    font-size: 1.1rem;
+}
+
+/* SECTION (glassmorphism) */
+
+
+/* TITRES */
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    border-left: 6px solid #4facfe;
+    padding-left: 15px;
+}
+
+/* CV CARD */
+.cv-card {
+    background: linear-gradient(135deg, rgba(79,172,254,0.9), rgba(0,242,254,0.9));
+    border-radius: 18px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.cv-info h3 {
+    font-size: 1.7rem;
+}
+
+.cv-info p {
+    margin-top: 8px;
+    color: #eaf8ff;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 14px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.btn-view {
+    background: white;
+    color: #0077ff;
+}
+
+.btn-view:hover {
+    background: #e6f4ff;
+}
+
+.btn-download {
+    background: #003f7f;
+    color: white;
+}
+
+.btn-download:hover {
+    background: #002f5f;
+}
+
+/* CERTIFICATIONS GRID */
+.cert-grid {
+    display: grid;
+    /* Crée 2 colonnes de taille égale */
+    grid-template-columns: repeat(3, auto); 
+    
+    /* Centre la grille horizontalement */
+    justify-content: center; 
+    
+    /* Espace entre les cartes (vertical et horizontal) */
+    gap: 100px; 
+    
+    /* Marge sur les côtés pour ne pas coller aux bords de l'écran */
+    padding: 20px;
+    
+    /* Optionnel : largeur max pour que ce ne soit pas trop étiré */
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+.card {
+    /* Assurez-vous que vos cartes n'ont pas de "margin" fixe 
+       qui pourrait casser le centrage */
+    margin: 0; 
+}
+
+/* CERT CARD */
+.cert-card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    transition: transform 0.3s;
+}
+
+.cert-card:hover {
+    transform: translateY(-10px);
+}
+
+.cert-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+.cert-org {
+    margin-top: 6px;
+    color: #bfe9ff;
+}
+
+.cert-date {
+    margin-top: 6px;
+    font-size: 0.9rem;
+    color: #e0f2ff;
+}
+
+/* CERT BUTTONS */
+.cert-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cert-actions a {
+    flex: 1;
+    justify-content: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .cv-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+     <!-- <div class="navbar">
+      <nav>
+  <ul>
+    <li><a href="index.html" >Accueil</a></li>
+     <li><a href="origine.html">Origine</a></li> -->
+    <!-- <li><a href="parcours.html">Parcours</a></li> -->
+    <!-- <li><a href="ambition.html" class="active">Ambition & projets</a></li> -->
+    <!-- <li><a href="informatique.html">Informatique</a></li> -->
+    <!-- <li><a href="video.html">Video</a></li>
+  </ul>
+  </nav>
+</div>  -->
+
+<!-- <div class="container"> -->
+
+    <!-- HEADER -->
+    <!-- <div class="header"> -->
+        <h1 id="certifications" class="main-title">CERTIFICATIONS </h1>
+        <!-- <p>Cheikh Ibrahima FAYE – Étudiant BUT Réseaux & Télécommunications</p>
+    </div> -->
+
+    <!-- CV -->
+    <!-- <section class="section"> -->
+        <!-- <h2 class="section-title">Curriculum Vitae</h2>
+
+        <div class="cv-card">
+            <div class="cv-info">
+                <h3>📄 Mon CV Professionnel</h3>
+                <p>Formation, compétences techniques, projets et expériences</p>
+            </div>
+
+            <div style="display:flex; gap:15px; flex-wrap:wrap;">
+                <a href="documents/CV_Cheikh_Ibrahima_FAYE.pdf" target="_blank" class="btn btn-view">
+                    👁️ Regarder
+                </a>
+                <a href="documents/CV_Cheikh_Ibrahima_FAYE.pdf" download class="btn btn-download">
+                    ⬇️ Télécharger
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CERTIFICATIONS -->
+    <!-- <section class="section"> -->
+        <!-- <h2 class="section-title">Certifications</h2> -->
+
+        <div class="cert-grid">
+
+            <!-- CERT 1 --> 
+
+            <!-- <div class="cert-card">
+                <div class="cert-title">mon CV</div>
+                <div class="cert-org">SecNumacadémie</div>
+                <div class="cert-date">Octobre 2025</div>
+                <div class="cert-actions">
+                    <a href="mooc_LK1_Faye_Cheikh.pdf" target="_blank" class="btn btn-view">Regarder</a>
+                    <a href="mooc_LK1_Faye_Cheikh.pdf" download class="btn btn-download">Télécharger</a>
+                </div>
+            </div> -->
+            <div class="cert-card">
+                <div class="cert-title">Cybersecurité</div>
+                <div class="cert-org">SecNumacadémie</div>
+                <div class="cert-date">Janvier 2026</div>
+                <div class="cert-actions">
+                    <a href="Cyber.pdf" target="_blank" class="btn btn-view">Regarder</a>
+                    <a href="Cyber.pdf" download class="btn btn-download">Télécharger</a>
+                </div>
+            </div> 
+
+        <!-- <div class="cert-grid"> -->
+
+            <!-- CERT 1 -->
+            <div class="cert-card">
+                <div class="cert-title">ANSSI</div>
+                <div class="cert-org">SecNumacadémie</div>
+                <div class="cert-date">Octobre 2025</div>
+                <div class="cert-actions">
+                    <a href="mooc_LK1_Faye_Cheikh.pdf" target="_blank" class="btn btn-view">Regarder</a>
+                    <a href="mooc_LK1_Faye_Cheikh.pdf" download class="btn btn-download">Télécharger</a>
+                </div> 
+            </div> 
+           
+
+            <div class="cert-card">  
+               
+                <div class="cert-title">CISCO</div>
+                <div class="cert-org">Networking Academy</div>
+                <div class="cert-date">Novembre 2025</div>
+                <div class="cert-actions">
+                    <a href="certification Cisco.pdf" target="_blank" class="btn btn-view">Regarder</a>
+                    <a href="certification Cisco.pdf" download class="btn btn-download">Télécharger</a>
+                </div>
+            </div> 
+
+            <!-- CERT 3 --> 
+            <div class="cert-card">
+                <div class="cert-title">IOT</div>
+                <div class="cert-org">Networking Academy</div>
+                <div class="cert-date">Janvier 2026</div>
+                <div class="cert-actions">
+                    <a href="CERTIFICATION IOT.pdf" target="_blank" class="btn btn-view">Regarder</a>
+                    <a href="CERTIFICATION IOT.pdf" download class="btn btn-download">Télécharger</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
+
+<h1 id="competences" class="main-title">COMPETENCES</h1>
+
+
+<!-- SECTION COMPÉTENCES -->
+<style>
+/* Styles pour la section compétences */
+.competences-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.skill-category {
+    margin-bottom: 45px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(168, 216, 240, 0.2);
+}
+
+.skill-category:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.skill-icon {
+    font-size: 2.5em;
+    filter: drop-shadow(0 5px 15px rgba(100, 200, 255, 0.4));
+}
+
+.skill-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #64c8ff;
+    text-shadow: 0 2px 10px rgba(100, 200, 255, 0.5);
+}
+
+.skill-description {
+    color: #d4ecf7;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.skill-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.skill-list li {
+    position: relative;
+    color: #e8f5fc;
+    font-size: 1.05em;
+    line-height: 2;
+    padding-left: 30px;
+    margin-bottom: 8px;
+}
+
+.skill-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: #64c8ff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.skill-list li::after {
+    content: "";
+    position: absolute;
+    left: 28px;
+    right: 0;
+    bottom: 8px;
+    height: 1px;
+    background: linear-gradient(to right, 
+        rgba(100, 200, 255, 0.3) 0%, 
+        rgba(100, 200, 255, 0.1) 50%, 
+        transparent 100%);
+}
+
+/* Animation d'entrée */
+.skill-category {
+    animation: slideIn 0.6s ease forwards;
+    opacity: 0;
+}
+
+.skill-category:nth-child(1) { animation-delay: 0.1s; }
+.skill-category:nth-child(2) { animation-delay: 0.2s; }
+.skill-category:nth-child(3) { animation-delay: 0.3s; }
+.skill-category:nth-child(4) { animation-delay: 0.4s; }
+.skill-category:nth-child(5) { animation-delay: 0.5s; }
+.skill-category:nth-child(6) { animation-delay: 0.6s; }
+.skill-category:nth-child(7) { animation-delay: 0.7s; }
+.skill-category:nth-child(8) { animation-delay: 0.8s; }
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-title {
+        font-size: 1.5em;
+    }
+
+    .skill-icon {
+        font-size: 2em;
+    }
+}
+</style>
+
+<div class="competences-container">
+    
+    <!-- HTML -->
+    <div class="skill-category">
+        <div class="skill-header">
+            <span class="skill-icon">🌐</span>
+            <h2 class="skill-title">Developpement Web</h2>
+        </div>
+        <p class="skill-description">
+            Site web dynamique - Site web statique
+        </p>
+        <ul class="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+        </ul>
+    </div>
+
+    <!-- CSS -->
+    <!-- <div class="skill-category">
+        <div class="skill-header">
+            <span class="skill-icon">🎨</span>
+            <h2 class="skill-title">CSS</h2>
+        </div>
+        <p class="skill-description">
+            Expertise en CSS3 pour créer des interfaces modernes, responsives et visuellement attractives.
+        </p>
+        <ul class="skill-list">
+            <li>CSS3 avancé (animations, transitions, transforms)</li>
+            <li>Flexbox pour des mises en page flexibles</li>
+            <li>CSS Grid pour des layouts complexes</li>
+            <li>Responsive design et media queries</li>
+            <li>Preprocesseurs (Sass, LESS)</li>
+            <li>Frameworks CSS (Bootstrap, Tailwind)</li>
+        </ul>
+    </div>
+
+     PHP -->
+    <!-- <div class="skill-category">
+        <div class="skill-header">
+            <span class="skill-icon">🐘</span>
+            <h2 class="skill-title">PHP</h2>
+        </div>
+        <p class="skill-description">
+            Développement backend robuste avec PHP pour des applications web dynamiques et sécurisées.
+        </p>
+        <ul class="skill-list">
+            <li>PHP 8+ et programmation orientée objet</li>
+            <li>Framework Laravel pour des applications MVC</li>
+            <li>Gestion de bases de données MySQL/MariaDB</li>
+            <li>Création d'API REST et services web</li>
+            <li>Sécurité web (injection SQL, XSS, CSRF)</li>
+            <li>Sessions, cookies et authentification</li>
+        </ul>
+    </div>
+
+     JavaScript -->
+    <div class="skill-category">
+        <div class="skill-header">
+            <span class="skill-icon">⚡</span>
+            <h2 class="skill-title">Programmation</h2>
+        </div>
+        <p class="skill-description">
+            Programmation voiture Elegoo - SAE 1.5
+        </p>
+        <ul class="skill-list">
+            <li>Ardiuno IDE</li>
+            <li>Capteurs</li>
+            <li>Déplacement dans différents environnements</li>
+            <li>Cliquez sur les liens pour voir les vidéos:</li>
+                <ul> <a href="https://youtube.com/shorts/goM6O-eY4oo?si=1yT6bqYGSBY_XqGv">Challenge1_suivi_de_ligne</a></ul>
+                <ul><a href="https://youtube.com/shorts/ACQZfwGYBmU?si=IboBOrD0-HsqoRtt">Challenge2_régulateur_de_vitesse</a></ul>
+                <ul><a href="https://youtube.com/shorts/sa2--1awysg?si=niCLcaMdsrir5z7R">Challenge3_Labyrinthe</a></ul>
+        </ul>
+    </div> 
+
+    <!-- Réseaux -->
+    <div class="skill-category">
+        <div class="skill-header">
+            <span class="skill-icon">🌐</span>
+            <h2 class="skill-title">Réseaux & Télécommunications</h2>
+        </div>
+        <p class="skill-description">
+            Configuration et administration réseau avec expertise en sécurité et infrastructure.
+        </p>
+        <ul class="skill-list">
+            <li>Protocoles TCP/IP et modèle OSI</li>
+            <li>Configuration de routeurs et switchs</li>
+            <li>Sécurité réseau et pare-feu</li>
+            <li>VPN et réseaux privés virtuels</li>
+            <li>DNS, DHCP et services réseau</li>
+            <li>Surveillance et diagnostic réseau</li>
+            <li>VLAN et segmentation réseau</li>
+        </ul>
+    </div>
+
+    <!-- Machines Virtuelles -->
+    <div class="skill-category">
+        <div class="skill-header">
+            <span class="skill-icon">💻</span>
+            <h2 class="skill-title">Administrer un système - R202</h2>
+        </div>
+        <p class="skill-description">
+            Maîtrise des technologies de virtualisation et conteneurisation pour environnements modernes.
+        </p>
+        <ul class="skill-list">
+            <li>Utilisation de Proxmox</li>
+            <li>Clonage de VM (linux - Windows)</li>
+            <li>Création de VM</li>
+            <li>Attribution des adresses IP</li>
+            <li>Attribution des droits</li>
+            <li>Configuration et optimisation de VMs</li>
+            <li>Snapshots et sauvegarde de machines virtuelles</li>
+        </ul>
+    </div>
+
+    <!-- Gestion de Projet -->
+    <div class="skill-category">
+        <div class="skill-header">
+            <span class="skill-icon">📊</span>
+            <h2 class="skill-title">Gestion de crise - Gestion de projet</h2>
+        </div>
+        <p class="skill-description">
+            Chargé de communication 
+        </p>
+        <ul class="skill-list">
+            <li>Rédaction des mails</li>
+            <li>Communiqué de presse</li>
+            <!-- <li>Trello et tableaux Kanban</li> -->
+            <li>Gestion des délais et priorités</li>
+            <li>Collaboration d'équipe et communication</li>
+            <li>Documentation technique de projets</li>
+        </ul>
+    </div>
+
+    <!-- Bases de Données -->
+    <div class="skill-category">
+        <div class="skill-header">
+            <span class="skill-icon">🗄️</span>
+            <h2 class="skill-title">Bases de Données</h2>
+        </div>
+        <p class="skill-description">
+            Conception, optimisation et administration de bases de données relationnelles et NoSQL.
+        </p>
+        <ul class="skill-list">
+            <li>MySQL et MariaDB (bases relationnelles)</li>
+            <li>PostgreSQL pour applications complexes</li>
+            <li>MongoDB (base de données NoSQL)</li>
+            <li>Requêtes SQL avancées et optimisation</li>
+            <li>Conception de schémas et normalisation</li>
+            <li>Indexation et amélioration des performances</li>
+            <li>Sauvegarde, restauration et réplication</li>
+        </ul>
+    </div>
+
+</div>
+<!-- FIN SECTION COMPÉTENCES -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<title>Mon album photo</title>
+
+<style>
+.contact{
+  text-align:center;
+  padding:40px 20px 80px;
+}
+
+.contact-intro{
+  max-width:750px;
+  margin:0 auto 40px;
+}
+
+.contact-intro h2{
+  font-size:1.8rem;
+  margin-bottom:10px;
+  color:#48c9b0;
+}
+
+.contact-intro p{
+  color:#d7f5ff;
+  margin-bottom:20px;
+}
+
+.cv-btn{
+  display:inline-block;
+  padding:12px 25px;
+  border-radius:30px;
+  text-decoration:none;
+  background:#48c9b0;
+  color:black;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.cv-btn:hover{
+  transform:scale(1.05);
+  background:#76ffe4;
+}
+
+/* cartes */
+.contact-grid{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.contact-card{
+  width:200px;
+  padding:25px;
+  border-radius:18px;
+  text-decoration:none;
+  color:white;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+
+.contact-card:hover{
+  transform:translateY(-10px);
+  background:rgba(72,201,176,0.25);
+}
+
+.contact-card .icon{
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+.contact-card span{
+  font-size:0.9rem;
+  color:#cfeeff;
+  display:block;
+  margin-top:5px;
+}
+
+.contact-extra{
+  margin-top:40px;
+  color:#aee6ff;
+}
+
+
+</style>
+</head>
+
+<!DOCTYPE html> <html lang="fr"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Mon album photo</title> <style> body { font-family: Arial, sans-serif; margin: 0; /* background: #f4f4f4; */ } h1 { text-align: center; padding: 20px; } .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 100px; padding: 100px; } .gallery img { width: 140%; height: 270px; object-fit: cover; cursor: pointer; border-radius: 10px; transition: transform 0.3s, box-shadow 0.3s; } .gallery img:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.3); } /* Lightbox */ .lightbox { display: none; position: fixed; z-index: 999; padding-top: 60px; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); } .lightbox img { margin: auto; display: block; max-width: 90%; max-height: 80%; border-radius: 10px; } .close { position: absolute; top: 20px; right: 35px; color: white; font-size: 40px; cursor: pointer; } </style> </head> <body> <h1 id="album" class="main-title">PHOTOS</h1> <div class="gallery"> <img src="unnamed (1).jpg" alt="Photo 1"> <img src="Badge cisco.png" alt="Photo 2"> <img src="Capture d'écran 2026-02-11 143457.png" alt="Photo 3"> <img src="IMG_4707.jpg" alt="Photo 4"> <img src="IMG_4024.jpg" alt="Photo 4"> <img src="IMG_4221.jpg" alt="Photo 4"> <img src="IMG_4715.jpg" alt="Photo 4"> <img src="IMG_4783.jpg" alt="Photo 4"> <img src="switch.jpg" alt="Photo 4"> <img src="unnamed.jpg" alt="Photo 4"> <img src="rpi.jpg" alt="Photo 4"> </div> <div id="lightbox" class="lightbox"> <span class="close">&times;</span> <img id="lightbox-img"> </div> <script> const images = document.querySelectorAll(".gallery img"); const lightbox = document.getElementById("lightbox"); const lightboxImg = document.getElementById("lightbox-img"); const closeBtn = document.querySelector(".close"); images.forEach(img => { img.addEventListener("click", () => { lightbox.style.display = "block"; lightboxImg.src = img.src; }); }); closeBtn.addEventListener("click", () => { lightbox.style.display = "none"; }); </script> </body> </html>
+
+
+
+<body>
+<!-- ================= CONTACT EXPERT ================= -->
+<h1 id="contact" class="main-title">CONTACT</h1>
+
+<section class="contact">
+  
+  <div class="contact-intro">
+    <!-- <h2>Disponible pour une alternance</h2> -->
+    <p>
+      Je suis ouvert aux opportunités dans les domaines des réseaux,
+      télécommunications et cybersécurité.
+      Réponse rapide garantie.
+    </p>
+
+    <a href="CV Professionnel Minimaliste Ressources Humaine Blanc et Gris (3).pdf" target="_blank" class="cv-btn">
+      📄 Voir mon CV
+    </a>
+  </div>
+
+  <div class="contact-grid">
+
+    <!-- Email -->
+    <a href="mailto:cheifayekh2005@email.com" class="contact-card">
+      <div class="icon">✉️</div>
+      <h3>Email</h3>
+      <span>Réponse sous 24h</span>
+    </a>
+
+    <!-- LinkedIn -->
+<a href="https://www.linkedin.com/in/cheikh-ibrahima-faye-17914b391/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BD%2BdLGuDRQYKwA3ZA15FDFA%3D%3D" target="_blank" class="contact-card">
+  <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+  <h3>LinkedIn</h3>
+  <span>Profil professionnel</span>
+</a>
+
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/0644772587" target="_blank" class="contact-card">
+     <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+      <h3>WhatsApp</h3>
+      <span>Rapide et direct</span>
+    </a>
+
+  </div>
+
+  <div class="contact-extra">
+    📍 Montbéliard – Mobilité possible  
+  </div>
+
+</section>
+
+</body>
+</html>
